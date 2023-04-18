@@ -20,7 +20,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: vaishnavi0601/node-docker
-        tags: commit
+        tags: commit, latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}      
