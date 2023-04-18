@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag img1:commit
+      run: docker build -t img1:latest .
   publish:
 
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Tag to dockerhub
-      run: docker tag img1:commit vaishnavi0601/node-docker:commit
+      run: docker tag img1:latest vaishnavi0601/node-docker:commit
     - name: Push to dockerhub
       run: docker push vaishnavi0601/node-docker:commit
  
