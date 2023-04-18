@@ -1,9 +1,0 @@
-version: '3'
-services:
-  node:
-    
-    image: vaishnavi0601/node-repo:latest
-
-    ports:
-      - "8000:8000"
-    
